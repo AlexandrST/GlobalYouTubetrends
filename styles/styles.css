@@ -1,0 +1,131 @@
+body {
+    font-family: Montserrat, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 60px);
+    gap: 12px 40px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 66px;
+}
+
+.video-row {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    background: #fff;
+}
+
+.video-row__cover {
+    border-radius: 12px;
+}
+
+.video-row__title {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.video-row__title:hover {
+    text-decoration: underline;
+}
+
+.video-row__description {
+    margin: 0 0 20px 0;
+    color: #565d6d;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: break-word;
+}
+
+.video-row__statistics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    background: #f3f4f6;
+    border-radius: 12px;
+    margin-top: 12px;
+    padding: 8px;
+}
+
+.video-row__statistics-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: default;
+}
+
+.video-row__statistics-icon {
+    color: #565d6d;
+    font-size: 16px;
+}
+
+.video-row__statistics-value {
+    font-size: 14px;
+    color: #565d6d;
+    line-height: 1;
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.country__position {
+    text-align: center;
+    color: #565d6d;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.country .country__flag {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 767px) {
+    .video-row {
+        flex-direction: column;
+    }
+
+    .video-row__left {
+        text-align: center;
+    }
+
+    .countries {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+}
