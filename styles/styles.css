@@ -23,6 +23,10 @@ h1 {
     margin-bottom: 66px;
 }
 
+h1 span {
+  color: blue; /* Делает текст внутри span красным */
+}
+
 .video-row {
     display: flex;
     gap: 24px;
