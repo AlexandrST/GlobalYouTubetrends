@@ -93,6 +93,22 @@ h1 span {
     line-height: 1;
 }
 
+.yt-spec-avatar-shape__image {
+    border-radius: 50%;
+}
+
+.yt-spec-avatar-shape--avatar-size-medium {
+    margin: 5px;
+    position: relative;
+    display: flex;
+    height: 50px;
+}
+
+.channel-title {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
 .country {
     display: flex;
     flex-direction: column;
